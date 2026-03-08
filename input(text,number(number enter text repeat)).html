@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="frm">
+        enter any text <br><br>
+        <input type="text" name="" id="text"><br><br>
+        enter number for repeat <br><br>
+        <input type="number" name="" id="num"><br><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <!---js code start here------>
+    <script>
+        var form = document.getElementById("frm");
+        form.onsubmit = function()
+        {
+            var text = document.getElementById("text").value;
+            var num = document.getElementById("num").value;
+
+            var i;
+            for(i=0;i<=num;i++)
+        {
+              document.write(text+ "<br>")
+        }
+        }
+    </script>
+</body>
+</html>
