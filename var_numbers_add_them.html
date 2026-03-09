@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var user =1234;
+        total =0;
+        lastdigit =0;
+        var i;
+        for(i=1;i<=4;i++)
+    {
+        lastdigit =user%10;
+        total =total +lastdigit;
+        user =parseInt(user/10)        
+
+    }
+    window.alert(total)
+    
+
+    </script>
+</body>
+</html>
